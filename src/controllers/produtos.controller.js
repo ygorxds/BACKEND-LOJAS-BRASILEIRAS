@@ -3,13 +3,13 @@ const createKnex = require('../context')
 const knex = createKnex();
 
 const ProdutoController = {
-    async buscar(req, res) {
+    async buscarProduto(req, res) {
         let clientes = await knex('PRODUTO').select('*');
         return res.json(clientes);
     },
 
    
-    async inserirCliente(req, res) {
+    async inserirProduto(req, res) {
         const cliente = req.body;
         let result = await knex('PRODUTO').insert(cliente);
         if(!result) return res.status(400).json({msg:'user does not inserted'});

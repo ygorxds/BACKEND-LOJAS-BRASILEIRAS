@@ -7,7 +7,6 @@ const ClienteController = {
         let clientes = await knex('CLIENTE').select('*');
         return res.json(clientes);
     },
-
    
     async inserirCliente(req, res) {
         const cliente = req.body;
