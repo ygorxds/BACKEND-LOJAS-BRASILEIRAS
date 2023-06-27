@@ -7,7 +7,7 @@
     "start": "node src/context.js",
     "dev": "nodemon src/context.js"
   },
-  "author": "jean michel, enzo teglas e angelo",
+  "author": "Ygor Pereira de Sá, Matheus Simão, Nicholas Barreto",
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
