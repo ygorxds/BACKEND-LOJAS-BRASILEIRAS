@@ -11,8 +11,8 @@ const FuncionarioController = {
     async inserirFuncionario(req, res) {
         const funcionario = req.body;
         let result = await knex('FUNCIONARIO').insert(funcionario);
-        if(!result) return res.status(400).json({msg:'product does not inserted'});
-        return res.status(200).json({msg:'product inserted'});
+        if(!result) return res.status(400).json({msg:'employ does not inserted'});
+        return res.status(200).json({msg:'employ inserted'});
     },
 }
 

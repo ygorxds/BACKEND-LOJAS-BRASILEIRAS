@@ -4,7 +4,7 @@ const router = express.Router();
 const VendaController = require('../controllers/venda.controller');
 
 
- router.get('/listarFinanceiro',VendaController.buscarVendas)
- router.post('/criarFinanceiro',VendaController.inserirVenda)
+ router.get('/listarVendas',VendaController.buscarVendas)
+ router.post('/criarVenda',VendaController.inserirVenda)
 
 module.exports = router;

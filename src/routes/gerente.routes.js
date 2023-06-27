@@ -4,7 +4,7 @@ const router = express.Router();
 const GerenteController = require('../controllers/gerente.controller');
 
 
- router.get('/listarFinanceiro',GerenteController.buscarGerentes)
- router.post('/criarFinanceiro',GerenteController.inserirGerente)
+ router.get('/listarGerentes',GerenteController.buscarGerentes)
+ router.post('/criarGerente',GerenteController.inserirGerente)
 
 module.exports = router;

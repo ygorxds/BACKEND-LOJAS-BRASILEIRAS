@@ -8,12 +8,14 @@ const estoquistaRoutes = require ('./estoquista.route');
 const financeiroRoutes = require('./financeiro.routes');
 const gerenteRoutes = require('./gerente.routes');
 const vendaRoutes = require('./venda.routes');
+const funcionarioRoutes = require('./funcionario.routes');
 
 router.get('/test',async (req,res) => res.json({teste:'dd'}))
 router.use('/cliente',clientesRoutes);
 router.use('/produto',produtoRoutes);
 router.use('/estoque',estoqueRoutes);
 router.use('/estoquista', estoquistaRoutes);
+router.use('/funcionario', funcionarioRoutes)
 router.use('/financeiro', financeiroRoutes);
 router.use('/gerente', gerenteRoutes);
 router.use('/venda', vendaRoutes);

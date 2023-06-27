@@ -2,6 +2,9 @@ const createKnex = require('../context')
 
 estoquistasex = createKnex();
 
+
+const knex = createKnex();
+
 const EstoquistaController = {
     async buscarEstoquistas(req, res) {
         let estoquistas = await knex('ESTOQUISTA').select('*');
