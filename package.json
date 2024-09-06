@@ -10,6 +10,7 @@
   "author": "Ygor Pereira de Sá, Matheus Simão, Nicholas Barreto",
   "license": "ISC",
   "dependencies": {
+    "@google-cloud/vision": "^4.3.2",
     "cors": "^2.8.5",
     "crypto": "^1.0.1",
     "dotenv": "^16.0.3",
@@ -17,6 +18,7 @@
     "helmet": "^7.0.0",
     "jsonwebtoken": "^9.0.0",
     "knex": "^2.4.2",
+    "multer": "^1.4.5-lts.1",
     "mysql": "^2.18.1",
     "mysql2": "^3.3.1",
     "nodemon": "^2.0.22",
